@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Track My CI",
+    "version": "1.0",
+    "description": "Enhance your CI/CD experience",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://gitlab.com/*"
+            ],
+            "js": [
+                "track-my-ci.js"
+            ]
+        }
+    ]
+}
